@@ -6,8 +6,12 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">Get Started</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+      <a class="btn btn-primary btn-lg px-4 mb-2"
+        href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/"
+        role="button">Get Started</a>
+      <p class="meta">Mozilla Public License 2.0. <a
+          href="https://github.com/kaizen-solutions/virgil/blob/main/LICENSE.md">GitHub v{{ $data := getJSON
+          "/package.json" }}{{ $data.version }}</a></p>
     </div>
   </div>
 </section>
@@ -18,30 +22,22 @@
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
-        <h2 class="h4">Security aware</h2>
-        <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks-child-theme.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+        <h2 class="h4">Why the name Virgil?</h2>
+        <p>Virgil was an ancient Roman poet who composed an epic poem about Cassandra and so we thought it would be
+          appropriate.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Fast by default ⚡️</h2>
-        <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=59aafe464a68f8bc30b8e9a636d5b053">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
+        <h2 class="h4">Acknowledgements</h2>
+        <p>Special thanks to <a href="https://degoes.net/">John De Goes</a>,<a href="https://contramap.dev/">Francis Toth</a> and <a href="https://github.com/nbenns">Nigel Benns</a> for their help, mentorship, and guidance. Shout
+        out to <a href="https://samuelgomez.co/">Samuel Gómez</a> for his significant contribution to the Cats Effect 3.x module.
+
+          We stand on the shoulders of giants, this work would not be possible without the effect systems and libraries
+          that were used to build Virgil.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">SEO-ready</h2>
-        <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
-      </div>
-    </div>
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-5">
-        <h2 class="h4">Full text search</h2>
-        <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Page layouts</h2>
-        <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Dark mode</h2>
-        <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+        <h2 class="h4">Inspiration</h2>
+        <p>We were heavily inspired by Doobie, Cassandra4IO and Quill and wanted a more native ZIO solution for
+          Cassandra focused on ergonomics, ease of use and performance (compile-time and runtime).</p>
       </div>
     </div>
   </div>

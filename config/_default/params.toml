@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Virgil"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "Functional Cassandra Client"
+description = "Virgil is a functional Cassandra client built using ZIO 2.x, Cats Effect 3.x, Magnolia and the Datastax 4.x Java drivers"
 
 ## Documentation
 # docsVersion = "0.3"
@@ -12,21 +12,17 @@ description = "Doks is a Hugo theme for building secure, fast, and SEO-ready doc
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
-
-## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+domainTLD = "virgil.netlify.app"
+titleHome = "Virgil"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaName = "Virgil"
+schemaAuthor = "Calvin Fernandes"
+schemaAuthorTwitter = ""
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/calvin-lee-fernandes/"
+schemaAuthorGitHub = "https://github.com/calvinlfer"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -34,9 +30,9 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = ""
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/kaizen-solutions/virgil"
 schemaSection = "blog"
 
 ## Sitelinks Search Box

@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "Virgil is a functional Cassandra client built using ZIO 2.x, Cats Effect 3.x, Magnolia and the Datastax 4.x Java drivers"
+lead: "Virgil is a functional Cassandra client built using ZIO 2.x, Cats Effect 3.x, Magnolia and the Datastax 4.x Java drivers"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -15,44 +15,37 @@ toc: true
 
 ## Get started
 
-There are two main ways to get started with Doks:
+There are two main ways to get started with Virgil depending on your Effect System of choice:
 
-### Tutorial
+### ZIO 2.x
 
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
+```sbt
+libraryDependencies += "io.kaizen-solutions" %% "virgil-zio" % "1.0.2"
+```
 
-Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
+### Cats Effect 3.x
+
+```sbt
+libraryDependencies += "io.kaizen-solutions" %% "virgil-cats-effect" % "1.0.2"
+```
+
+### Alternative
+
+To integrate another effect system (or runtime), depend on the core module and reference the implementations for ZIO & Cats Effect
+
+```sbt
+libraryDependencies += "io.kaizen-solutions" %% "virgil-core" % "1.0.2"
+```
+{{< alert icon="👉" text="Please note that Virgil is built for Scala 2.12.x, 2.13.x and 3.3.x but fully-automatic derivation is not present for 3.3.x." />}}
 
 ### Quick Start
 
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
-
 One page summary of how to start a new Doks project. [Quick Start →]({{< relref "quick-start" >}})
 
-## Go further
+### Low Level API
 
-Recipes, Reference Guides, Extensions, and Showcase.
-
-### Recipes
-
-Get instructions on how to accomplish common tasks with Doks. [Recipes →](https://getdoks.org/docs/recipes/project-configuration/)
-
-### Reference Guides
-
-Learn how to customize Doks to fully make it your own. [Reference Guides →](https://getdoks.org/docs/reference-guides/security/)
-
-### Extensions
-
-Get instructions on how to add even more to Doks. [Extensions →](https://getdoks.org/docs/extensions/breadcrumb-navigation/)
-
-### Showcase
-
-See what others have build with Doks. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
+Low Level API reference for Virgil. [Low Level API →]({{< relref "low-level-api" >}})
 
 ## Contributing
 
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
-
-## Help
-
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+Find out how to contribute to Virgil. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
