@@ -1,0 +1,55 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2"
+        href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/"
+        role="button">Get Started</a>
+      <p class="meta">Mozilla Public License 2.0. <a
+          href="https://github.com/kaizen-solutions/virgil/blob/main/LICENSE.md">GitHub v{{ $data := getJSON
+          "/package.json" }}{{ $data.version }}</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<section class="section section-sm">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5">
+        <h2 class="h4">Why the name Virgil?</h2>
+        <p>Virgil was an ancient Roman poet who composed an epic poem about Cassandra and so we thought it would be
+          appropriate.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Acknowledgements</h2>
+        <p>Special thanks to <a href="https://degoes.net/">John De Goes</a>,<a href="https://contramap.dev/">Francis Toth</a> and <a href="https://github.com/nbenns">Nigel Benns</a> for their help, mentorship, and guidance. Shout
+        out to <a href="https://samuelgomez.co/">Samuel Gómez</a> for his significant contribution to the Cats Effect 3.x module.
+
+          We stand on the shoulders of giants, this work would not be possible without the effect systems and libraries
+          that were used to build Virgil.</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Inspiration</h2>
+        <p>We were heavily inspired by Doobie, Cassandra4IO and Quill and wanted a more native ZIO solution for
+          Cassandra focused on ergonomics, ease of use and performance (compile-time and runtime).</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}
